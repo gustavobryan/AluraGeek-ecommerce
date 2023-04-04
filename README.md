@@ -5,7 +5,7 @@
 * [x] Separação de imagens;
 * [x] Inicializar repo;
 * [x] 🎉 Commit inicial;
-* [] Iniciar HTML;
+* [x] Iniciar HTML;
 * [] CSS base;
 * [] Continuar HTML;
 * [] Iniciar JS;

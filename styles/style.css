@@ -1,0 +1,124 @@
+/*               global              */
+
+:root {
+    --bg-color: #ebebeb;
+    --input-placeholder: #d4d4d4;
+    --input-bg: #efefef;
+    --texto-destaque: #ffff;
+    --azul-destaque: #2a7ae4;
+    --bg-contato: #eaf2fd;
+    font-size: "Releway", sans-serif;
+}
+
+/*                  Normalize CSS                  */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Releway", sans-serif;
+    background-color: var(--bg-color);
+    scroll-behavior: smooth;
+}
+
+/*            Padrão páginas              */
+
+textarea:focus,
+input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: var(--input-placeholder);
+    padding: 2%;
+}
+
+a {
+    color: var(--azul-destaque);
+    font-weight: 800;
+    font-family: "Releway", sans-serif;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/*           Header            */
+
+header {
+    background-color: var(--texto-destaque);
+    padding: 30px;
+}
+
+nav {
+    align-items: center ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logo-pesquisa {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 601px;
+}
+
+.logo {
+    align-items: center;
+    display: flex;
+}
+
+.logo img {
+    height: 29.17px;
+    width: 40.02px;
+}
+
+.logo p {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.logo .logo-azul {
+    margin-left: 10px;
+    color: var(--azul-destaque);
+}
+
+.logo-pesquisa input {
+    background-color: var(--input-bg);
+    border: none;
+    border-radius: 30px;
+    height: 40px;
+    margin-left: 10%;
+    padding: 1% 3%;
+    width: 393px;
+}
+
+.logo-pesquisa .bi-search {
+    color: #2a7ae4;
+    font-size: 1.5em;
+}
+
+.login {
+    display: flex;
+    justify-content: end;
+    width: 600px;
+}
+
+.login button {
+    background: none;
+    border: solid 1px var(--azul-destaque);
+    color: var(--azul-destaque);
+    height: 51px;
+    text-transform: uppercase;
+    width: 182px;
+}
+
+.login button:hover {
+    background-color: var(--azul-destaque);
+    color: var(--texto-destaque);
+}
