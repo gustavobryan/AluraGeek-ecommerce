@@ -1,4 +1,4 @@
-/*               global              */
+/*               Global              */
 
 :root {
     --bg-color: #ebebeb;
@@ -55,7 +55,7 @@ header {
 }
 
 nav {
-    align-items: center ;
+    align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -122,3 +122,5 @@ nav {
     background-color: var(--azul-destaque);
     color: var(--texto-destaque);
 }
+
+/*         Footer formulario        */ 

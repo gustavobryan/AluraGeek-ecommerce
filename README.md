@@ -6,8 +6,9 @@
 * [x] Inicializar repo;
 * [x] 🎉 Commit inicial;
 * [x] Iniciar HTML;
-* [] CSS base;
-* [] Continuar HTML;
+* [x] CSS base;
+* [x] Continuar HTML;
+* [] Continuar CSS
 * [] Iniciar JS;
 * [] Criação da API;
 * [] iniciar json-server;
