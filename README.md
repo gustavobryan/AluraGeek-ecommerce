@@ -7,8 +7,10 @@
 * [x] 🎉 Commit inicial;
 * [x] Iniciar HTML;
 * [x] CSS base;
-* [x] Continuar HTML;
-* [] Continuar CSS
+* [x] HTML contato + footer;
+* [x] CSS contato + footer
+* [x] HTML página login
+* [] CSS página login
 * [] Iniciar JS;
 * [] Criação da API;
 * [] iniciar json-server;

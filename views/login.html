@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
+    <title>Alura Geek | Login</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-pesquisa">
+                <div class="logo">
+                    <img src="../assets/logo.png" alt="logo">
+                    <p class="logo-azul">Alura</p>
+                    <p>Geek</p>
+                </div>
+                <input type="text" placeholder="Procurar" />
+                <i class="bi bi-search"></i>
+            </div>
+            <div class="login">
+                <a href="login.html"><button type="submit">Login</button></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="login">
+            <div class="login-title">Iniciar Sessão</div>
+            <form action="#" class="form-cadastro" data-form>
+            <input 
+            class="login-input-url"
+            type="text"
+            placeholder="Digite seu email" 
+            required
+            data-email
+            />
+            <input 
+            class="login-input-nome"
+            type="password" 
+            placeholder="Digite sua senha"
+            required
+            data-password
+            />
+            <button type="submit" class="login-btn">Entrar</button>
+        </form>
+        </section>
+    </main>
+
+
+    <section class="contato">
+        <div class="referencia">
+            <i class="bi bi-controller"></i>
+            <p>Alura</p>
+            <p>Geek</p>
+        </div>
+        <div class="links-uteis">
+            <a href="#">Quem somos nós</a>
+            <a href="#">Politica de Privacidade</a>
+            <a href="#">Programa de fidelidade</a>
+            <a href="#">Nossas lojas</a>
+            <a href="#">Quero ser franqueado</a>
+            <a href="#">Anuncie aqui</a>
+        </div>
+
+        <div class="form">
+            <p>Fale conosco</p>
+            <div class="label-float">
+                <input type="text" name="Nome" id="Nome" class="input-nome" />
+                <label for="Nome" class="label-nome">Nome</label>
+            </div>
+            <textarea name="mensagem" id="msg" cols="5" rows="5" placeholder="Escreva sua mensagem"></textarea>
+        </div>
+    </section>
+    <script type="module" src="../controllers/login-controller.js"></script>
+
+</body>
+
+</html>
