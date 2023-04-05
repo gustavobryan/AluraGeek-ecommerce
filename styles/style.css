@@ -139,9 +139,10 @@ nav {
     width: 350px;
 }
 
-.referencia img {
-    width: 60px;
-    height: 40px;
+.referencia i {
+    color: #000000;
+    font-size: 3em;
+    text-align: center;
 }
 
 .img-crud {
