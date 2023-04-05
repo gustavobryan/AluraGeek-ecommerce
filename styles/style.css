@@ -123,12 +123,12 @@ nav {
     color: var(--texto-destaque);
 }
 
-/*         Footer formulario        */ 
+/*         Footer formulario        */
 
 .contato {
     background-color: var(--bg-contato);
     display: flex;
-    height: 365px;
+    height: 335px;
     justify-content: center;
     padding: 64px 0;
 }
@@ -156,4 +156,77 @@ nav {
     font-weight: bolder;
     margin-left: 6px;
     margin-top: 5px;
+}
+
+.links-uteis {
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    margin-right: 100px;
+    width: 200px;
+}
+
+.links-uteis a {
+    color: black;
+    font-weight: normal;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 500px;
+}
+
+.form p {
+    font-weight: bold;
+}
+
+.form input {
+    border: transparent;
+    box-sizing: content-box;
+    color: var(--azul-destaque);
+    height: 56px;
+    margin-bottom: 20px;
+    padding: 0.5% 2.7%;
+    position: relative;
+    width: 475px;
+}
+
+.form input:hover {
+    border-bottom: solid 2px var(--azul-destaque);
+    transition: linear 1s;
+}
+
+.label-nome {
+    color: var(--input-placeholder);
+    left: 9px;
+    position: absolute;
+    top: 80px;
+    transition: 0.5s;
+    width: 100%;
+}
+
+.input-nome:focus+.label-nome {
+    color: var(--azul-destaque);
+    font-size: 0.9em;
+    top: 64px;
+    transition: 0.2s;
+    z-index: 2;
+}
+
+.form textarea {
+    border: transparent;
+    color: var(--azul-destaque);
+    font-family: "Relaway", sans-serif;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form button {
+    background-color: var(--azul-destaque);
+    border: none;
+    color: var(--texto-destaque);
+    height: 51px;
+    width: 180px;
 }
