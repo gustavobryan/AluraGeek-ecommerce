@@ -124,3 +124,35 @@ nav {
 }
 
 /*         Footer formulario        */ 
+
+.contato {
+    background-color: var(--bg-contato);
+    display: flex;
+    height: 365px;
+    justify-content: center;
+    padding: 64px 0;
+}
+
+.referencia {
+    display: flex;
+    margin: 20px 0 0 0;
+    width: 350px;
+}
+
+.referencia img {
+    width: 60px;
+    height: 40px;
+}
+
+.img-crud {
+    height: 250px;
+    width: 250px;
+}
+
+.referencia p {
+    color: var(--azul-destaque);
+    font-size: 1.8em;
+    font-weight: bolder;
+    margin-left: 6px;
+    margin-top: 5px;
+}
