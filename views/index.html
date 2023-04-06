@@ -30,7 +30,7 @@
 		<nav>
 			<div class="logo-pesquisa">
 				<div class="logo">
-					<img src="../assets/logo.png" alt="logo">
+					<i class="bi bi-controller"></i>
 					<p class="logo-azul">Alura</p>
 					<p>Geek</p>
 				</div>
@@ -67,40 +67,36 @@
 		</section>
 	</section>
 
-	<section class="contato">
-		<div class="referencia">
-			<i class="bi bi-controller"></i>
-			<p>Alura</p>
-			<p>Geek</p>
-		</div>
-		<div class="links-uteis">
-			<a href="#">Quem somos nós</a>
-			<a href="#">Politica de Privacidade</a>
-			<a href="#">Programa de fidelidade</a>
-			<a href="#">Nossas lojas</a>
-			<a href="#">Quero ser franqueado</a>
-			<a href="#">Anuncie aqui</a>
-		</div>
-
-		<div class="form">
-			<p>Fale conosco</p>
-			<div class="label-float">
-				<input 
-				type="text" 
-				name="Nome" 
-				id="Nome" 
-				class="input-nome"/>
-				<label for="Nome" class="label-nome">Nome</label>
+	<footer class="footer-bg" id="footer">
+		<section class="contato">
+			<div class="referencia">
+				<i class="bi bi-controller"></i>
+				<p>Game</p>
+				<p>Geek</p>
 			</div>
-			<textarea 
-			name="mensagem" 
-			id="msg" cols="5" 
-			rows="5" 
-			placeholder="Escreva sua mensagem"
-			></textarea>
+			<div class="links-uteis">
+				<a href="#">Quem somos nós</a>
+				<a href="#">Politica de Privacidade</a>
+				<a href="#">Programa de fidelidade</a>
+				<a href="#">Nossas lojas</a>
+				<a href="#">Quero ser franqueado</a>
+				<a href="#">Anuncie aqui</a>
+			</div>
+
+			<div class="form">
+				<p>Fale conosco</p>
+				<div class="label-float">
+					<input type="text" name="Nome" id="Nome" class="input-nome" />
+					<label for="Nome" class="label-nome">Nome</label>
+				</div>
+				<textarea name="mensagem" id="msg" cols="5" rows="5" placeholder="Escreva sua mensagem"></textarea>
+			</div>
+		</section>
+		<div class="footer-dev">
+			<p>Desenvolvido por <a href="https://github.com/gustavobryan">Gustavo Bryan</a></p>
 		</div>
-	</section>
-<script type="module" src="../controllers/produtos-controller.js"></script>
+	</footer>
+	<script type="module" src="../controllers/produtos-controller.js"></script>
 </body>
 
 </html>
