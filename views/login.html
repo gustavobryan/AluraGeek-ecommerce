@@ -21,68 +21,68 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="../styles/style.css" />
-        <link rel="stylesheet" href="../styles/login.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/login.css" />
     <title>Game Geek | Login</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <div class="logo-pesquisa">
-                <div class="logo">
-                    <i class="bi bi-controller"></i>
-                    <p class="logo-azul">Game</p>
-                    <p>Geek</p>
+        <nav class="container navbar-menu">
+            <div class="box-logo">
+                <i class="bi bi-controller"></i>
+                <a href="index.html" class="logo-azul">Game</a>
+                <a href="index.html">Geek</a>
+                <div class="box-search" style="display: none;">
+                    <input type="text" placeholder="Procurar" />
+                    <i class="bi bi-search"></i>
                 </div>
-                <input type="text" placeholder="Procurar" />
-                <i class="bi bi-search"></i>
             </div>
-            <div class="login">
-                <a href="login.html"><button type="submit">Login</button></a>
-            </div>
+            <a href="login.html"><button type="submit">Login</button></a>
         </nav>
     </header>
-    <main>
-        <section class="login">
-            <div class="login-title">Iniciar Sessão</div>
-            <form action="#" class="form-cadastro" data-form>
-                <input class="login-input-url" type="text" placeholder="Digite seu email" required data-email />
-                <input class="login-input-nome" type="password" placeholder="Digite sua senha" required data-password />
-                <button type="submit" class="login-btn">Entrar</button>
+    <main class="login-bg">
+        <section class="login-box container">
+            <h1>Iniciar Sessão</h1>
+            <form action="" name="formulario" onsubmit="return validarLogin()">
+                <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                <div id="erro-email"></div>
+                <input type="password" placeholder="Digite sua senha" id="senha" required>
+                <div id="erro-senha"></div>
+                <button class="btn-login" id="submit" type="submit">Entrar</button>
             </form>
         </section>
     </main>
 
-<footer class="footer-bg" id="footer">
-    <section class="contato">
-        <div class="referencia">
-            <i class="bi bi-controller"></i>
-            <p>Game</p>
-            <p>Geek</p>
-        </div>
-        <div class="links-uteis">
-            <a href="#">Quem somos nós</a>
-            <a href="#">Politica de Privacidade</a>
-            <a href="#">Programa de fidelidade</a>
-            <a href="#">Nossas lojas</a>
-            <a href="#">Quero ser franqueado</a>
-            <a href="#">Anuncie aqui</a>
-        </div>
-
-        <div class="form">
-            <p>Fale conosco</p>
-            <div class="label-float">
-                <input type="text" name="Nome" id="Nome" class="input-nome" />
-                <label for="Nome" class="label-nome">Nome</label>
+    <footer class="footer-bg" id="footer">
+        <section class="contato">
+            <div class="referencia">
+                <i class="bi bi-controller"></i>
+                <p>Game</p>
+                <p>Geek</p>
             </div>
-            <textarea name="mensagem" id="msg" cols="5" rows="5" placeholder="Escreva sua mensagem"></textarea>
+            <div class="links-uteis">
+                <a href="#">Quem somos nós</a>
+                <a href="#">Politica de Privacidade</a>
+                <a href="#">Programa de fidelidade</a>
+                <a href="#">Nossas lojas</a>
+                <a href="#">Quero ser franqueado</a>
+                <a href="#">Anuncie aqui</a>
+            </div>
+
+            <div class="form">
+                <p>Fale conosco</p>
+                <div class="label-float">
+                    <input type="text" name="Nome" id="Nome" class="input-nome" />
+                    <label for="Nome" class="label-nome">Nome</label>
+                </div>
+                <textarea name="mensagem" id="msg" cols="5" rows="5" placeholder="Escreva sua mensagem"></textarea>
+            </div>
+        </section>
+        <div class="footer-dev">
+            <p>Desenvolvido por <a href="https://github.com/gustavobryan">Gustavo Bryan</a></p>
         </div>
-    </section>
-    <div class="footer-dev">
-        <p>Desenvolvido por <a href="https://github.com/gustavobryan">Gustavo Bryan</a></p>
-    </div>
-</footer>
+    </footer>
     <script type="module" src="../controllers/login-controller.js"></script>
 
 </body>
