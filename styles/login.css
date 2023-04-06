@@ -1,5 +1,8 @@
-main {
-    background: #f5f5f5;
+@import url(style.css);
+
+
+.login-bg {
+    background: #ababab;
     padding: 16px;
 }
 
