@@ -1,45 +1,65 @@
-@import url(style.css);
+@import url(./style.css);
 
 
 .login-bg {
-    background: #ababab;
-    padding: 16px;
+    background: #d3d3d3b7;
+    padding: 30px;
 }
 
-.login {
+.login-box {
+    align-items: center;
+    border-radius: 30px;
+    border: solid 2px #2a7ae4;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    height: 300px;
+    margin: auto;
+    padding: 10px;
+    width: 35%;
+
 }
 
-.login-title {
+h1 {
+    color: rgb(87, 87, 87);
     display: flex;
     font-size: 22px;
     font-weight: 700;
     justify-content: center;
     line-height: 26px;
-    margin: 0 auto;
+    padding: 10px;
 }
 
-.login-input-url,
-.login-input-nome {
-    align-items: center;
-    /*border-bottom: 1px solid (cor secundaria ;*/
+.formulario .bi-envelope-at {
+    left: 40px;
+    top: -24px;
+    position: relative;
+    color: #2a7ae4;
+}
+
+.formulario .bi-key {}
+
+.formulario {
+    width: 100%;
+}
+
+#email,
+#senha {
     border: 1px solid black;
     border-radius: 4px;
     display: flex;
     font-size: 16px;
     font-weight: 400;
-    height: 30px;
-    justify-content: center;
+    height: 24px;
     line-height: 20px;
     margin: 0 auto;
-    margin-top: 16px;
-    padding: 8px 12px 13px 12px;
-    width: 40%; 
+    width: 80%;
 }
 
-.login-btn {
+input {
+    
+}
+
+.btn-login {
     align-items: center;
     background: #2a7ae4;
     color: #ffffff;

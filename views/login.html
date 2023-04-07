@@ -44,13 +44,13 @@
     <main class="login-bg">
         <section class="login-box container">
             <h1>Iniciar Sessão</h1>
-            <form action="" name="formulario" onsubmit="return validarLogin()">
-                <i class="bi bi-envelope-at"></i>
+            <form class="formulario" action="" name="formulario" onsubmit="return validarLogin()">
                 <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                <i class="bi bi-envelope-at"></i>
                 <div id="erro-email"></div>
+                <div id="erro-senha"></div>
                 <i class="bi bi-key"></i>
                 <input type="password" placeholder="Digite sua senha" id="senha" required>
-                <div id="erro-senha"></div>
                 <button class="btn-login" id="submit" type="submit">Entrar</button>
             </form>
         </section>

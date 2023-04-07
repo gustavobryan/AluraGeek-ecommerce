@@ -20,7 +20,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Releway", sans-serif;
-    background-color: var(--bg-color);
+    background-color: white;
     scroll-behavior: smooth;
 }
 
@@ -54,7 +54,8 @@ button {
 
 header {
     background-color: var(--input-bg);
-    padding: 30px;
+    border-bottom: 1px solid rgba(255, 0, 0, 0.238);
+    padding: 20px;
 }
 
 .navbar-menu {
