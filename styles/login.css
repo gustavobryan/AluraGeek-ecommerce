@@ -15,7 +15,7 @@
     height: 300px;
     margin: auto;
     padding: 10px;
-    width: 35%;
+    width: 30%;
 
 }
 
@@ -49,7 +49,7 @@ h1 {
 
 #email,
 #senha {
-    border: 1px solid black;
+    border: 0;
     border-radius: 4px;
     display: flex;
     font-size: 16px;
@@ -78,11 +78,11 @@ input {
     font-size: 16px;
     font-weight: 400;
     gap: 10px;
-    height: 51px;
+    height: 31px;
     justify-content: center;
     line-height: 19px;
     margin: 0 auto;
     margin-top: 30px;
     padding: 16px;
-    width: 45%;
+    width: 35%;
 }
