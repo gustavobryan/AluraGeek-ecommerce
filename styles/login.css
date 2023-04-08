@@ -30,13 +30,18 @@ h1 {
 }
 
 .formulario .bi-envelope-at {
-    left: 40px;
-    top: -24px;
+    left: 50px;
+    top: 5px;
     position: relative;
     color: #2a7ae4;
 }
 
-.formulario .bi-key {}
+.formulario .bi-key {
+    left: 50px;
+    top: 24px;
+    position: relative;
+    color: #2a7ae4;
+}
 
 .formulario {
     width: 100%;
@@ -55,7 +60,12 @@ h1 {
     width: 80%;
 }
 
+#email {
+    margin-bottom: -30px;
+}
+
 input {
+    padding-inline: 30px;
     
 }
 
