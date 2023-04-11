@@ -208,7 +208,7 @@ input.input-search::placeholder {
     border: transparent;
     box-sizing: content-box;
     color: var(--azul-destaque);
-    height: 56px;
+    height: 20px;
     margin-bottom: 20px;
     padding: 0.5% 2.7%;
     position: relative;
@@ -222,6 +222,7 @@ input.input-search::placeholder {
 
 .label-nome {
     color: var(--input-placeholder);
+    height: 10px;
     left: 9px;
     position: absolute;
     top: 80px;
