@@ -1,0 +1,12 @@
+{
+    "produto": [
+        {
+            "name": "Alura latam",
+            "imageUrl": "https://avatars.githubusercontent.com/u/4975968?s=280&v=4",
+            "price": "5",
+            "id": "1",
+            "description": ""
+
+        },
+    ]
+}

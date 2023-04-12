@@ -1,0 +1,19 @@
+{
+  "name": "alurageek-ecommerce",
+  "version": "1.0.0",
+  "description": "* [x] Criação do projeto;\r * [x] Separação de imagens;\r * [x] Inicializar repo;\r * [x] 🎉 Commit inicial;\r * [x] Iniciar HTML;\r * [x] CSS base;\r * [x] HTML contato + footer;\r * [x] CSS contato + footer\r * [x] HTML página login\r * [] CSS página login\r * [] Iniciar JS;\r * [] Criação da API;\r * [] iniciar json-server;\r * [] ++",
+  "main": "formattePrice.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavobryan/AluraGeek-ecommerce.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavobryan/AluraGeek-ecommerce/issues"
+  },
+  "homepage": "https://github.com/gustavobryan/AluraGeek-ecommerce#readme"
+}
