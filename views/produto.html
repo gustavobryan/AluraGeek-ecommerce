@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Geek | produtos</title>
-</head>
-<body>
 
-    <header>
-		<nav class="container navbar-menu">
-			<div class="box-logo">
-				<a href="index.html"> <i class="bi bi-controller"></i></a>
-				<a href="#" class="logo-azul">Game</a>
-				<a href="#">Geek</a>
-				<div class="box-search">
-					<input class="input-search" type="text" placeholder="Procurar" id="filter" />
-					<i class="bi bi-search lupa-search"></i>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../styles/style.css">
+	<link rel="stylesheet" href="../styles/products.css">
+	<title>Game Geek | produtos</title>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div class="logo-busca">
+				<div class="logo">
+					<img src="../assets/logo.png" alt="logo" />
+					<p class="logo-azul">Game</p>
+					<p>Geek</p>
 				</div>
+				<input i type="text" placeholder="O que deseja encontrar?" />
 			</div>
-			<a class="login-btn" href="login.html">Login</a>
+			<div class="login">
+				<a href="login.html"><button type="submit">Login</button></a>
+			</div>
 		</nav>
 	</header>
-    <main>
-        <section class="geral-products">
-            <div class="products-title">
-            <span>Todos os produtos</span>
-            <a href="/views/add-products.html"></a>
-            <button class="product-button">Adicionar produto</button>
-        </div>
-            <section class="products-section" data-allProducts>
 
-            </section>
-        </section>
-       
-    </main>
+	<main>
+		<section class="geral-products">
+			<div class="products-title">
+				<span>Todos os produtos</span>
+				<a href="/views/add-products.html"><button class="product-button">Adicionar produto</button>
+</a>
+			</div>
+			<section class="products-section" data-allProducts>
 
-    <footer class="footer-bg" id="footer">
+			</section>
+		</section>
+
+	</main>
+
+	<footer class="footer-bg" id="footer">
 		<section class="contato">
 			<div class="referencia">
-				<i class="bi bi-controller"></i>
+				<img src="../assets/logo.png" alt="logo">
 				<p>Game</p>
-				<p>Geek</p>
+				<p class="geek">Geek</p>
 			</div>
 			<div class="links-uteis">
 				<a href="#">Quem somos nós</a>
@@ -53,10 +58,10 @@
 			</div>
 
 			<div class="form">
-				<p>Fale conosco</p>
+				<p class="fale-conosco">Fale conosco</p>
 				<div class="label-float">
-					<input type="text" name="Nome" id="Nome" class="input-nome" />
 					<label for="Nome" class="label-nome">Nome</label>
+					<input type="text" name="Nome" id="Nome" class="input-nome" />
 				</div>
 				<textarea name="mensagem" id="msg" cols="5" rows="5" placeholder="Escreva sua mensagem"></textarea>
 				<button>Enviar mensagem</button>
@@ -66,6 +71,7 @@
 			<p>Desenvolvido por <a href="https://github.com/gustavobryan">Gustavo Bryan</a></p>
 		</div>
 	</footer>
-    
+	<script type="module" src="../controllers/lista-produtos.js"></script>
 </body>
+
 </html>
