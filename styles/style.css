@@ -1,294 +1,259 @@
 /*               Global              */
 
 :root {
-    --azul-destaque: #2a7ae4;
-    --bg-color: #ff0000;
-    --bg-contato: #0303b5;
-    --cor-secundaria: #009929;
-    --cor-primaria: #4040fb ;
-    --cor-det: #e5c24c;
-    --input-bg: #efefef;
-    --input-placeholder: #c5c4c4;
-    --texto-destaque: #b10005;
-    font-size: "Releway", sans-serif;
+  --azul-destaque: #2a7ae4;
+  --bg-color: #ff0000;
+  --bg-contato: #0303b5;
+  --cor-secundaria: #009929;
+  --cor-primaria: #4040fb;
+  --cor-det: #e5c24c;
+  --input-bg: #efefef;
+  --input-placeholder: #c5c4c4;
+  --texto-destaque: #b10005;
+  font-size: "Releway", sans-serif;
 }
 
 /*                  Normalize CSS                  */
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Releway", sans-serif;
-    background-color: white;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Releway", sans-serif;
+  background-color: white;
+  scroll-behavior: smooth;
 }
 
 /*            Padrão páginas              */
 
 textarea:focus,
 input:focus {
-    box-shadow: 0 0 0 0;
-    border: 0 none;
-    outline: 0;
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
 }
 
 input::placeholder,
 textarea::placeholder {
-    color: var(--input-placeholder);
-    padding: 2%;
+  color: var(--input-placeholder);
+  padding: 2%;
 }
 
 a {
-    color: var(--azul-destaque);
-    font-weight: 800;
-    font-family: "Releway", sans-serif;
-    text-decoration: none;
+  color: var(--azul-destaque);
+  font-weight: 800;
+  font-family: "Releway", sans-serif;
+  text-decoration: none;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /*           Header            */
 
 header {
-    background-color: var(--input-bg);
-    border-bottom: 1px solid rgba(255, 0, 0, 0.238);
-    padding: 20px;
+  background-color: var(--input-bg);
+  border-bottom: 1px solid rgba(255, 0, 0, 0.238);
+  padding: 20px;
 }
 
-.navbar-menu {
-    align-items: center;
-    display: flex;
-    height: 115px;
-    justify-content: space-between;
-    width: 100%;
+nav {
+  align-items: center;
+  display: flex;
+  height: 115px;
+  justify-content: space-around;
+  width: 100%;
 }
 
-.box-logo {
-    align-items: center;
-    display: flex;
-    gap: 12px;
+.logo-busca {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 601px;
 }
 
-.box-logo .bi-controller {
-    color: var(--cor-det);
-    font-size: 35px;
-    font-weight: bolder;
+.logo {
+  align-items: center;
+  display: flex;
 }
 
-.box-logo a {
-    color: var(--bg-color);
-    font-size: 2em;
-    font-weight: bold;
-    text-decoration: none;
+.logo img {
+  height: 29px;
+  width: 40px;
 }
 
-.box-logo .logo-azul {
-    margin-left: 10px;
-    color: var(--cor-primaria);
+.logo p {
+  color: var(--bg-color);
+  font-size: 32px;
+  font-weight: bolder;
 }
 
-.box-search {
-    align-items: center;
-    cursor: text;
-    display: flex;
-    padding-left: 40px;
+.logo .logo-azul {
+  margin-left: 10px;
+  color: var(--cor-primaria);
 }
 
-.input-search {
-    background-color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 20px;
-    padding: 4px;
-    width: 390px;
+.logo-busca input {
+  background-image: url("../assets/lupa.png");
+  background-color: var(--input-bg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-position-x: 320px;
+  border: none;
+  border-radius: 30px;
+  height: 40px;
+  margin-left: 6%;
+  padding: 1% 3%;
+  width: 393px;
 }
 
-.input-search:focus-visible {
-    outline: none;
-    border: 1px solid var(--bg-contato)
+.login {
+  display: flex;
+  justify-content: end;
+  width: 500px;
 }
 
-.box-search .bi-search {
-    color: rgb(122, 122, 122);
-    cursor: pointer;
-    font-size: 1.5em;
-    font-weight: bolder;
-    margin-left: -40px;
-    position: relative;
+.login button {
+  background: none;
+  border: solid 1px var(--bg-color);
+  color: var(--bg-color);
+  height: 51px;
+  text-align: center;
+  width: 182px;
 }
 
-input.input-search::placeholder {
-    color: var(--input-placeholder);
-    font-size: 14px;
-    font-weight: 400;
-    position: relative;
-    text-align: start;
-}
-
-.login-btn {
-    background: none;
-    border: solid 1px var(--bg-color);
-    color: var(--bg-color);
-    height: 40px;
-    padding: 6px;
-    text-align: center;
-    width: 100px;
-}
-
-.login-btn:hover {
-    background: none;
-    border: solid 1px var(--azul-destaque);
-    color: var(--azul-destaque);
-    text-decoration: none;
-    transition: 0.5s;
+.login button:hover {
+  background: none;
+  border: solid 1px var(--azul-destaque);
+  color: var(--azul-destaque);
+  text-decoration: none;
+  transition: 0.5s;
 }
 
 /*         Footer formulario        */
 
 .contato {
-    background-color: var(--bg-contato);
-    display: flex;
-    height: 335px;
-    justify-content: center;
-    padding: 64px 0;
+  background-color: var(--bg-contato);
+  display: flex;
+  height: 235px;
+  justify-content: center;
+  padding: 30px 0;
 }
 
 .referencia {
-    display: flex;
-    margin: 20px 0 0 0;
-    width: 350px;
+  display: flex;
+  margin: 20px 0 0 0;
+  width: 350px;
 }
 
-.referencia i {
-    color: #000000;
-    font-size: 3em;
-    text-align: center;
+.referencia img {
+  height: 40px;
+  width: 60px;
 }
 
 .img-crud {
-    height: 250px;
-    width: 250px;
+  height: 250px;
+  width: 250px;
 }
 
 .referencia p {
-    color: var(--azul-destaque);
-    font-size: 1.8em;
-    font-weight: bolder;
-    margin-left: 6px;
-    margin-top: 5px;
+  color: white;
+  font-size: 1.8em;
+  font-weight: bolder;
+  margin-left: 6px;
+  margin-top: 5px;
+}
+
+.referencia .geek {
+  color: var(--bg-color);
 }
 
 .links-uteis {
-    display: flex;
-    flex-direction: column;
-    line-height: 40px;
-    margin-right: 100px;
-    width: 200px;
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+  margin-right: 100px;
+  width: 200px;
 }
 
 .links-uteis a {
-    color: black;
-    font-weight: normal;
+  color: lightcyan;
+  font-weight: normal;
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 500px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 500px;
 }
 
 .form p {
-    font-weight: bold;
+  font-weight: boldel;
+}
+
+.fale-conosco {
+  color: white;
+  font-size: 20px;
+  text-align: center;
 }
 
 .form input {
-    border: transparent;
-    box-sizing: content-box;
-    color: var(--azul-destaque);
-    height: 20px;
-    margin-bottom: 20px;
-    padding: 0.5% 2.7%;
-    position: relative;
-    width: 475px;
+  border: none;
+  box-sizing: content-box;
+  color: var(--azul-destaque);
+  height: 28px;
+  margin-bottom: 20px;
+  padding: 0.5% 2.7%;
+  position: relative;
+  width: 475px;
 }
 
 .form input:hover {
-    border-bottom: solid 2px var(--azul-destaque);
-    transition: linear 1s;
+  border-bottom: solid 2px var(--azul-destaque);
+  transition: linear 1s;
 }
 
 .label-nome {
-    color: var(--input-placeholder);
-    height: 10px;
-    left: 9px;
-    position: absolute;
-    top: 80px;
-    transition: 0.5s;
-    width: 100%;
+  color: var(--input-placeholder);
+  height: 10px;
+  left: 9px;
+  margin-top: 30px;
+  transition: 0.5s;
+  width: 100%;
 }
 
-.input-nome:focus+.label-nome {
-    color: var(--azul-destaque);
-    font-size: 0.9em;
-    top: 64px;
-    transition: 0.2s;
-    z-index: 2;
+.input-nome:focus + .label-nome {
+  color: var(--azul-destaque);
+  font-size: 0.9em;
+  top: px;
+  transition: 0.2s;
 }
 
 .form textarea {
-    border: transparent;
-    color: var(--azul-destaque);
-    font-family: "Relaway", sans-serif;
-    margin-bottom: 20px;
-    width: 100%;
+  border: transparent;
+  color: var(--azul-destaque);
+  font-family: "Relaway", sans-serif;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 .form button {
-    background-color: var(--azul-destaque);
-    border: none;
-    color: var(--texto-destaque);
-    height: 51px;
-    width: 180px;
+  background-color: var(--azul-destaque);
+  border: none;
+  color: white;
+  height: 51px;
+  width: 180px;
 }
 
-@media (max-width: 850px) {
-    .input-search {
-        width: 230px;
-    }
+.footer-dev p {
+  color: black;
+  font-size: 16px;
+  text-align: center;
 }
 
-@media (max-width: 725px) {
-    .login-btn {
-        width: 80px;
-    }
-}
-
-@media (max-width: 625px) {
-    
-    .box-logo .bi-controller {
-        font-size: 25px;
-    }
-    
-    .box-logo a {
-        font-size: 1.3em;
-    }
-    
-    .input-search {
-        display: none;
-    }
-    
-    .lupa-search {
-        display: block;
-        left: 10px;
-        position: relative;
-        right: 0;
-        width: 25px;
-    }
-
-    .box-search .bi-search {
-        font-size: 1em;
-    }
+.footer-dev a {
+  font-weight: 200;
+  text-decoration: none;
 }
