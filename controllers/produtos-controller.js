@@ -32,8 +32,8 @@ const render = async () => {
                 )
             );
         });
-    } catch (error) {
-        console.log(error);
+    } catch (erro) {
+        console.log(erro);
     }
 };
 

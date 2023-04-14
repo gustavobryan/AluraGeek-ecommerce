@@ -40,11 +40,11 @@ produtos.addEventListener("click", async (evento) => {
         let id = produto.dataset.id;
         produtoServices
         .deleteProduto(id)
-        .then((resposta) => {
+        .then((res) => {
             produto.remove();
-            produto.log(resposta);
+            produto.log(res);
         })
-        .catch((error) => console.log(error));
+        .catch((err) => console.log(err));
     }
 });
 
@@ -57,8 +57,8 @@ const render = async () => {
                 getProducts(produto.name, produto.price, produto.imageUrl, produto.id)
             );
         });
-    } catch (error) {
-        console.log(error);
+    } catch (err) {
+        console.log(err);
     }
 };
 

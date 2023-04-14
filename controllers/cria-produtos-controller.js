@@ -15,7 +15,7 @@ form.addEventListener("submit", (evento) => {
             window.location.href = "../views/index.html";
             console.log(resposta);
         })
-        .catch((error) => {
-            console.log(error);
+        .catch((err) => {
+            console.log(err);
         });
 });
