@@ -1,6 +1,6 @@
 main {
     background: white;
-    padding: 20px;
+    padding: 30px;
 }
 
 .product-add_title {
@@ -27,7 +27,7 @@ main {
     line-height: 20px;
     margin: 10px auto;
     padding: 2px;
-    width: 40%;
+    width: 30%;
 }
 
 .product-add_textarea__description {
@@ -37,16 +37,17 @@ main {
 .product-add_btn {
     align-items: center;
     background-color: #4040fb;
+    border: none;
     color: white;
     display: flex;
     flex-direction: row;
     font-size: 16px;
     font-weight: 400;
     gap: 10px;
-    height: 48px;
+    height: 42px;
     justify-content: center;
     line-height: 18px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 15px;
     width: 15%;
 }
