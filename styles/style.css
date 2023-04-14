@@ -54,7 +54,7 @@ button {
 
 header {
   background-color: var(--input-bg);
-  border-bottom: 1px solid rgba(255, 0, 0, 0.238);
+  border-bottom: 1px solid rgba(255, 0, 0, 0.138);
   padding: 20px;
 }
 

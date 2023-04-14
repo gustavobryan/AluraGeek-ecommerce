@@ -1,88 +1,71 @@
-@import url(./style.css);
+:root {
+    --azul-destaque: #2a7ae4;
+    --bg-color: #ff0000;
+    --bg-contato: #0303b5;
+    --cor-secundaria: #009929;
+    --cor-primaria: #4040fb;
+    --cor-det: #e5c24c;
+    --input-bg: #efefef;
+    --input-placeholder: #c5c4c4;
+    --texto-destaque: #b10005;
+    font-size: "Releway", sans-serif;
+  }
 
-
-.login-bg {
-    background: #d3d3d3b7;
-    padding: 30px;
+main {
+    background-color: white;
+    padding: 20px;
 }
 
-.login-box {
-    align-items: center;
-    border-radius: 30px;
-    border: solid 2px #2a7ae4;
+.login-login {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    height: 300px;
-    margin: auto;
-    padding: 10px;
-    width: 30%;
-
+    width: 100%;
 }
 
-h1 {
-    color: rgb(87, 87, 87);
+.login_title {
     display: flex;
     font-size: 22px;
     font-weight: 700;
     justify-content: center;
     line-height: 26px;
-    padding: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
-.formulario .bi-envelope-at {
-    left: 50px;
-    top: 5px;
-    position: relative;
-    color: #2a7ae4;
-}
-
-.formulario .bi-key {
-    left: 50px;
-    top: 24px;
-    position: relative;
-    color: #2a7ae4;
-}
-
-.formulario {
-    width: 100%;
-}
-
-#email,
-#senha {
-    border: 0;
+.login_input__url,
+.login_input__name {
+    align-items: center;
+    border: solid black 1px;
+    border-bottom: 1px solid var(--cor-primaria);
     border-radius: 4px;
     display: flex;
     font-size: 16px;
     font-weight: 400;
-    height: 24px;
+    height: 25px;
+    justify-content: center;
     line-height: 20px;
     margin: 0 auto;
-    width: 80%;
+    margin-top: 16px;
+    padding: 8px 12px ;
 }
 
-#email {
-    margin-bottom: -30px;
-}
-
-input {
-    padding-inline: 30px;
-    
-}
-
-.btn-login {
+.login_btn {
     align-items: center;
     background: #2a7ae4;
+    border: none;
     color: #ffffff;
     display: flex;
     flex-direction: row;
     font-size: 16px;
     font-weight: 400;
     gap: 10px;
-    height: 31px;
+    height: 25px;
     justify-content: center;
     line-height: 19px;
     margin: 0 auto;
+    margin-bottom: 30px;
     margin-top: 30px;
     padding: 16px;
-    width: 35%;
+    width: 10%;
 }

@@ -9,18 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap" />
 
-    <!-- Bootstrap CSS!-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <!-- Bootstrap icons!-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
-
-    <!-- Bootstrap js!-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/login.css" />
     <title>Game Geek | Login</title>
@@ -28,30 +16,29 @@
 
 <body>
     <header>
-        <nav class="container navbar-menu">
-            <div class="box-logo">
-                <i class="bi bi-controller"></i>
-                <a href="index.html" class="logo-azul">Game</a>
-                <a href="index.html">Geek</a>
-                <div class="box-search" style="display: none;">
-                    <input type="text" placeholder="Procurar" />
-                    <i class="bi bi-search"></i>
+        <nav>
+            <div class="logo-busca">
+                <div class="logo">
+                    <img src="../assets/logo.png" alt="logo" />
+                    <p class="logo-azul">Game</p>
+                    <p>Geek</p>
                 </div>
+                <input i type="text" placeholder="O que deseja encontrar?" />
             </div>
-            <a href="login.html"><button type="submit">Login</button></a>
+            <div class="login">
+                <a href="login.html"><button type="submit">Login</button></a>
+            </div>
         </nav>
     </header>
-    <main class="login-bg">
-        <section class="login-box container">
-            <h1>Iniciar Sessão</h1>
-            <form class="formulario" action="" name="formulario" onsubmit="return validarLogin()">
-                <input type="email" name="email" id="email" placeholder="Digite seu email" required>
-                <i class="bi bi-envelope-at"></i>
-                <div id="erro-email"></div>
-                <div id="erro-senha"></div>
-                <i class="bi bi-key"></i>
-                <input type="password" placeholder="Digite sua senha" id="senha" required>
-                <button class="btn-login" id="submit" type="submit">Entrar</button>
+
+    <main>
+        <section class="login-login">
+            <div class="login_title">Iniciar Sessão</div>
+            <form action="#" class="form-cadastro" data-form>
+                <input class="login_input__url" type="text" placeholder="Escreva seu email" required data-email />
+                <input class="login_input__name" type="password" placeholder="Escreva sua senha" required
+                    data-password />
+                <button type="submit" class="login_btn">Entrar</button>
             </form>
         </section>
     </main>
@@ -59,9 +46,9 @@
     <footer class="footer-bg" id="footer">
         <section class="contato">
             <div class="referencia">
-                <i class="bi bi-controller"></i>
+                <img src="../assets/logo.png" alt="logo">
                 <p>Game</p>
-                <p>Geek</p>
+                <p class="geek">Geek</p>
             </div>
             <div class="links-uteis">
                 <a href="#">Quem somos nós</a>
@@ -73,10 +60,10 @@
             </div>
 
             <div class="form">
-                <p>Fale conosco</p>
+                <p class="fale-conosco">Fale conosco</p>
                 <div class="label-float">
-                    <input type="text" name="Nome" id="Nome" class="input-nome" />
                     <label for="Nome" class="label-nome">Nome</label>
+                    <input type="text" name="Nome" id="Nome" class="input-nome" />
                 </div>
                 <textarea name="mensagem" id="msg" cols="5" rows="5" placeholder="Escreva sua mensagem"></textarea>
                 <button>Enviar mensagem</button>
