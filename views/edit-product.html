@@ -12,42 +12,51 @@
 
 <body>
     <header>
-        <nav class="container navbar-menu">
-            <div class="box-logo">
-                <i class="bi bi-controller"></i>
-                <a href="index.html" class="logo-azul">Game</a>
-                <a href="index.html">Geek</a>
-                <div class="box-search" style="display: none;">
-                    <input type="text" placeholder="Procurar" />
-                    <i class="bi bi-search"></i>
-                </div>
+        <nav>
+          <div class="logo-busca">
+            <div class="logo">
+              <img src="../assets/logo.png" alt="logo" />
+              <p class="logo-azul">Alura</p>
+              <p>Geek</p>
             </div>
-            <a href="login.html"><button type="submit">Login</button></a>
+            <input i type="text" placeholder="O que deseja encontrar?" />
+          </div>
         </nav>
-    </header>
-
-    <main>
-        <section class="geral-products">
-            <div class="products-title">Editar produtos</div>
-            <section class="products-section" data-allProducts>
-                <form action="#" class="form-control" data-form>
-                    <img src="" data url />
-                    <input type="text" class="product-add_input_name" placeholder="Nome do produto" data-nome />
-                    <input type="text" class="product-add_input_price" placeholder="Preço do produto" data-preco />
-                    <textarea class="product-add_textarea_description" type="text" placeholder="Descrção do produto"
-                        data-descrcao></textarea>
-                    <button type="submit" class="product-submit_btn">
-                        Atualizar produto
-                    </button>
-                </form>
-            </section>
+      </header>
+      <section class="geral-products">
+        <div class="products_title">Editar produto</div>
+        <section class="products-section" data-allProducts>
+          <form action="#" class="form-control" data-form>
+            <img src="" data-url />
+            <input
+              class="product-add_input__name"
+              type="text"
+              placeholder="Nome do produto"
+              data-nome
+            />
+            <input
+              class="product-add_input__price"
+              type="text"
+              placeholder="Preço do produto"
+              data-preco
+            />
+            <textarea
+              class="product-add_textarea__description"
+              type="text"
+              placeholder="Descrição do produto"
+              data-descricao
+            ></textarea>
+            <button type="submit" class="product-submit_btn">
+              Atualizar produto
+            </button>
+          </form>
         </section>
-    </main>
+      </section>
 
     <footer class="footer-bg" id="footer">
         <section class="contato">
             <div class="referencia">
-                <i class="bi bi-controller"></i>
+                <img src="/assets/logo.png" alt="logo">
                 <p>Game</p>
                 <p>Geek</p>
             </div>
