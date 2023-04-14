@@ -10,8 +10,8 @@
 * [x] HTML contato + footer;
 * [x] CSS contato + footer
 * [x] HTML página login
-* [] CSS página login
-* [] Iniciar JS;
-* [] Criação da API;
-* [] iniciar json-server;
-* [] ++
+* [x] CSS página login
+* [x] Iniciar JS;
+* [x] Criação da API;
+* [x] iniciar json-server;
+* [x] ++
